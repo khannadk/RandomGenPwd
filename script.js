@@ -27,9 +27,7 @@ function passwordReqs() {
      passwordLength = parseInt(prompt("Choose between 8 and 128 characters for your password length"));
 
       if (passwordLength >= 8 && passwordLength <= 128) {
-     
-       
-       
+        alert("Password length Requirements Met!")         
 
      addSpecial = confirm("Do you want any Special characters?");
      addNumbers = confirm("Do you want any Numeric Characters?");
@@ -64,9 +62,6 @@ function passwordReqs() {
     writePassword();
 }
 
-
-
-
  function generatePassword() {
     var password = "";
     for (i = 0; i < passwordLength; i++) {
@@ -74,8 +69,6 @@ function passwordReqs() {
     }
 
     return password;
-//     var passwordPool = [];
-//     console.log(passwordPool)
     }
 
 
@@ -85,5 +78,5 @@ function passwordReqs() {
      var passwordText = document.querySelector("#password");
      passwordText.value = password;
 
-// //   passwordText.value = password; 
+// call writePassword() after prompts met 
    }
