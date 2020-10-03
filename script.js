@@ -40,6 +40,26 @@ function passwordReqs() {
     }
 
 
+    // if (addSpecial || addNumbers || addLower || addUpper) {
+    //     alert("Your password meets all requirements!");
+    // }else { alert("Your password does meet all the requirements"); 
+    //    passwordReqs ();
+    //   }
+
+    if (addSpecial) {
+        chosenChar = chosenChar.concat(special);
+     }
+    if (addNumbers) {
+        chosenChar = chosenChar.concat(numbers);
+    }
+
+    if (addLower) {
+        chosenChar = chosenChar.concat(lower);
+    }
+
+    if (addUpper) {
+        chosenChar = chosenChar.concat(upper);
+    }
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
