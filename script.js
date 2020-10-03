@@ -60,14 +60,30 @@ function passwordReqs() {
     if (addUpper) {
         chosenChar = chosenChar.concat(upper);
     }
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+    
+    writePassword();
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+
+
+ function generatePassword() {
+    var password = "";
+    for (i = 0; i < passwordLength; i++) {
+        password += chosenChar[Math.floor(chosenChar.length * Math.random())];
+    }
+
+    return password;
+//     var passwordPool = [];
+//     console.log(passwordPool)
+    }
+
+
+// // Write password to the #password input
+   function writePassword() {
+     var password = generatePassword();
+     var passwordText = document.querySelector("#password");
+     passwordText.value = password;
+
+// //   passwordText.value = password; 
+   }
