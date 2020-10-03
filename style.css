@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: rgb(43, 4, 4);
 }
 
 .wrapper {
@@ -27,11 +27,11 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: rgb(248, 239, 239);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 46%, 37%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,6 +40,7 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  text-align: center;
 }
 
 .card-header::after {
@@ -48,6 +49,7 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+  text-align: center;
 }
 
 .card-body {
@@ -78,7 +80,7 @@ header {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 5%, 7%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -104,10 +106,10 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 40px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 40px;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
@@ -116,6 +118,9 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  background-color: rgb(46, 18, 11);
+  color: rgb(163, 157, 157);
+  font-size: xx-large;
 }
 
 @media (max-width: 690px) {
@@ -127,6 +132,7 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+    
   }
 }
 
