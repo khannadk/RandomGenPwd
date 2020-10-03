@@ -13,6 +13,33 @@ var special = [ "!", "@", "#", "$", "%", "^", "&", "*", "+" ];
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
+// Opening Alert 
+alert("Time to generate a new password!");
+
+// User Prompts upon clicking generate button 
+generateBtn.addEventListener("click", passwordReqs);
+
+function passwordReqs() {
+    chosenChar = [];
+
+    alert("Follow the next prompts to create your password");
+
+     passwordLength = parseInt(prompt("Choose between 8 and 128 characters for your password length"));
+
+      if (passwordLength >= 8 && passwordLength <= 128) {
+     
+       
+       
+
+     addSpecial = confirm("Do you want any Special characters?");
+     addNumbers = confirm("Do you want any Numeric Characters?");
+     addLower = confirm("Do you want any Lowercase characters?");
+     addUpper = confirm("Do you want any Uppercase characters?");
+      }else { alert("not a valid password");
+           passwordReqs ();
+    }
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
