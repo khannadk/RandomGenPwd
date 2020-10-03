@@ -77,6 +77,6 @@ function passwordReqs() {
      var password = generatePassword();
      var passwordText = document.querySelector("#password");
      passwordText.value = password;
-
+   
 // call writePassword() after prompts met 
    }
